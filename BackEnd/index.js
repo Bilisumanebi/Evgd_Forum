@@ -30,7 +30,7 @@ app.use(express.json())
 app.use("/api/users", userRoute)
 
 //  question route middleware
-app.use("/api/questions", questionsRoute)
+app.use("/api/questions", AuthMiddleware,  questionsRoute)
 
 // answer route middleware
 

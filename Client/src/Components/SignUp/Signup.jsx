@@ -50,7 +50,7 @@ const Signup = ({  toggleForm }) => {
             Already have an account?{" "}
             <span
               onClick={() => {
-               toggleForm();
+                toggleForm();
               }}
               style={{
                 color: "#E6A055",
@@ -67,7 +67,7 @@ const Signup = ({  toggleForm }) => {
               {errorMessage}
             </span>
           )}
-          
+
           <form onSubmit={handleSubmit}>
             <input
               ref={userNameDom}
@@ -133,7 +133,7 @@ const Signup = ({  toggleForm }) => {
               </div>
             </div>
 
-            <p>
+            <p style={{ fontSize: "12px", marginBottom: "10px", textAlign: "center" }}>
               I agree to the{" "}
               <Link
                 to={"https://www.evangadi.com/legal/privacy/"}
@@ -154,12 +154,12 @@ const Signup = ({  toggleForm }) => {
                 Agree and Join
               </button>
             </p>
-            <p>
+            <p style={{ fontSize: "12px", textAlign: "center" }}>
               <Link
                 style={{ color: "#ff8500", textDecoration: "none" }}
                 to="/"
                 onClick={() => {
-                 toggleForm();
+                  toggleForm();
                 }}
               >
                 Already have account?
